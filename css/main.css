@@ -88,6 +88,20 @@ body {
     text-align: center;
 }
 
+.share-buttons {
+  list-style: none;
+  padding: 0;
+}
+
+.share-buttons li {
+  display: inline;
+}
+
+.share-buttons .center {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

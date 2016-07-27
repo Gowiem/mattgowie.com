@@ -1,16 +1,20 @@
-$(document).ready(function() {
-  var $rollover = $('.the-rollover'),
-      $climbingImg = $('.climbing-img'),
-      $mainImg = $('.main-img');
+(function() {
 
-  // Return early when on Mobile
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    return;
+  function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   }
 
-  $rollover.mouseenter(function() {
-    $mainImg.toggleClass('transparent');
-  }).mouseleave(function() {
-    $mainImg.toggleClass('transparent');
+  $(document).ready(function() {
+    var $rollover = $('.the-rollover'),
+        $climbingImg = $('.climbing-img'),
+        $mainImg = $('.main-img');
+
+    $rollover.mouseenter(function() {
+      if (isMobile()) { return; }
+      $mainImg.toggleClass('transparent');
+    }).mouseleave(function() {
+      if (isMobile()) { return; }
+      $mainImg.toggleClass('transparent');
+    });
   });
-});
+})();

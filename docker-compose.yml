@@ -2,3 +2,4 @@ mattgowie.com:
   build: .
   ports:
     - 80:80
+    - 443:443

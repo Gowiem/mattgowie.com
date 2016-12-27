@@ -17,6 +17,14 @@ body {
   height: 100%;
 }
 
+a {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
 .main-img {
   background: url(../img/san-diego.jpg) center center no-repeat;
   background-size: cover;

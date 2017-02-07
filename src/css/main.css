@@ -69,6 +69,14 @@ a:visited {
   color: #f1c100;
 }
 
+.pin img {
+  height: 18px;
+}
+
+.current-location-holder {
+  margin: 60px;
+}
+
 .the-rollover {
   cursor: cell;
 }
@@ -173,4 +181,8 @@ a:visited {
 
 .clearfix {
     *zoom: 1;
+}
+
+.hidden {
+  display: none;
 }

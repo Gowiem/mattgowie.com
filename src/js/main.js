@@ -21,7 +21,7 @@
   var addCurrentLocation = function() {
     var $currentLocation = $('.current-location'),
         $pin = $('.pin');
-    $.getJSON('https://whereami.mattgowie.com/last_location', function(data) {
+    $.getJSON('https://docker-micro.mattgowie.com/last_location', function(data) {
       var city = data['city'],
           country = data['country'],
           countryLong = data['country_long'],

@@ -10,9 +10,9 @@ terraform {
 
   backend "s3" {
     region         = "us-west-2"
-    bucket         = "mp-mattgowie-website-test-terraform-state"
+    bucket         = "gow-prod-terraform-state"
     key            = "terraform.tfstate"
-    dynamodb_table = "mp-mattgowie-website-test-terraform-state-lock"
+    dynamodb_table = "gow-prod-terraform-state-lock"
     encrypt        = "true"
   }
 }

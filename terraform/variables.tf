@@ -7,11 +7,15 @@ variable "namespace" {
 
 variable "stage" {
   type        = string
-  default     = ""
   description = "Stage, e.g. 'prod', 'staging', 'dev', OR 'source', 'build', 'test', 'deploy', 'release'"
 }
 
 variable "region" {
   type        = string
   description = "The AWS region infrastructure should reside in."
+}
+
+variable "gh_access_token" {
+  type = string
+  description = "The GH access token to allow creating the webhook and access to GH repo."
 }
